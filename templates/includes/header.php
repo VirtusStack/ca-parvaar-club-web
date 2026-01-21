@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/css/layout.css">
 <link rel="stylesheet" href="assets/css/pages.css">
 </head>
-<body>
+<body> 
 
 <div class="ca-header-wrapper">
 
@@ -165,7 +165,6 @@
   </ul>
 
 </div>
-
 <!-- MOBILE OVERLAY  -->
 <div class="ca-overlay"></div>
 
