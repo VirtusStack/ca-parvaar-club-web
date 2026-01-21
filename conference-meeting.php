@@ -58,6 +58,7 @@ include __DIR__ . '/templates/includes/header.php';
     </div>
   </div>
 </section>
+
 <?php include __DIR__ . '/templates/includes/proximity.php'; ?>
 
 <?php include __DIR__ . '/templates/includes/footer.php'; ?>
