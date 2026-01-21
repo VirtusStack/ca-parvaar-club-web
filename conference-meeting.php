@@ -17,19 +17,18 @@ include __DIR__ . '/templates/includes/header.php';
   <p class="ca-page-subtitle">Accommodate Upto 100 Guests</p>
 </section>
 
-<!-- ===== CONFERENCE SECTION ===== -->
-<section class="ca-conference-section">
-  <div class="ca-conference-inner">
+<section class="ca-conference-wrapper">
+  <div class="ca-conference-container">
 
-    <!-- LEFT IMAGE -->
-    <div class="ca-conference-image">
-      <img src="assets/images/club/conference.jpeg" alt="Conference & Meetings">
+    <!-- IMAGE -->
+    <div class="ca-conference-left">
+      <img src="assets/images/club/conference.jpeg" alt="Conference">
     </div>
 
-    <!-- RIGHT CONTENT -->
-    <div class="ca-conference-content">
+    <!-- CONTENT -->
+    <div class="ca-conference-right">
 
-      <h3 class="ca-conference-heading">
+      <h3 class="ca-conference-title">
         <span></span> Plan Your Conference
       </h3>
 
@@ -41,27 +40,24 @@ include __DIR__ . '/templates/includes/header.php';
       </p>
 
       <p>
-        These multiple venues are ideal for Day Conferences, Corporate Dinners
-        and Residential Conferences. These venues can accommodate up to
-        <strong>100 guests</strong> and can cater to all budget requirements.
+        These venues are ideal for Day Conferences, Corporate Dinners and
+        Residential Conferences and can accommodate up to <strong>100 guests</strong>.
       </p>
 
       <strong>Conference Facilities:</strong>
 
-      <ul class="ca-conference-list">
-        <li>Centrally air-conditioned Conference Halls equipped with LCD Projectors, Visual Screens, Audio, White Board and Soft Board.</li>
+      <ul>
+        <li>Centrally air-conditioned Conference Halls with LCD Projectors.</li>
         <li>100% Power back-up.</li>
         <li>24x7 Wi-Fi Campus.</li>
-        <li>Exclusive Dining Areas for Conference Guests.</li>
-        <li>RO Filtered Water for Drinking.</li>
+        <li>Exclusive Dining Areas.</li>
+        <li>RO Filtered Water.</li>
         <li>Halls designed as per conference needs.</li>
       </ul>
 
     </div>
-
   </div>
 </section>
-
 <?php include __DIR__ . '/templates/includes/proximity.php'; ?>
 
 <?php include __DIR__ . '/templates/includes/footer.php'; ?>
