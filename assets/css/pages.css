@@ -391,18 +391,39 @@
 }
 
 /* ===============================
-   CONFERENCE & MEETINGS – CA STYLE
+   PAGE TITLE (CA STYLE)
+   =============================== */
+
+.ca-page-title {
+  text-align: center;
+  padding: 45px 0 25px;
+}
+
+.ca-page-title h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.ca-page-subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ===============================
+   CONFERENCE SECTION
    =============================== */
 
 .ca-conference-section {
-  padding: 40px 0 70px;
+  padding: 35px 0 70px; /* gap from title like CA */
 }
 
 .ca-conference-inner {
   width: 82%;
   margin: auto;
   display: grid;
-  grid-template-columns: 48% 52%;
+  grid-template-columns: 50% 50%;
   gap: 40px;
   align-items: flex-start;
 }
@@ -410,11 +431,14 @@
 /* IMAGE */
 .ca-conference-image img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
 /* CONTENT */
+.ca-conference-content {
+  padding-top: 8px; /* IMPORTANT – pushes text slightly down */
+}
+
 .ca-conference-content p {
   font-size: 15px;
   line-height: 1.8;
@@ -423,35 +447,34 @@
   text-align: justify;
 }
 
-/* TITLE WITH YELLOW LINE */
-.ca-conference-title {
+/* HEADING WITH YELLOW BAR */
+.ca-conference-heading {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   position: relative;
   padding-left: 14px;
 }
 
-.ca-conference-title span {
+.ca-conference-heading span {
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 3px;
   width: 4px;
   height: 22px;
-  background: #f1b400; /* CA-Parivaar yellow */
+  background: #f1b400;
 }
 
 /* LIST */
 .ca-conference-list {
-  margin-top: 10px;
+  margin-top: 8px;
   padding-left: 18px;
 }
 
 .ca-conference-list li {
   font-size: 14.5px;
   line-height: 1.8;
-  margin-bottom: 8px;
-  color: #222;
+  margin-bottom: 7px;
 }
 
 /* RESPONSIVE */
