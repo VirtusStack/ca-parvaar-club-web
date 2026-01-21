@@ -112,7 +112,7 @@
         <ul class="dropdown-menu">
           <li><a href="conference-meeting.php">Conference & Meeting</a></li>
           <li><a href="shooting.php">Shooting</a></li>
-          <li><a href="facilities.php">Wedding</a></li>
+          <li><a href="wedding.php">Wedding</a></li>
         </ul>
       </li>
 
