@@ -111,7 +111,7 @@
         <a href="#">Club</a>
         <ul class="dropdown-menu">
           <li><a href="conference-meeting.php">Conference & Meeting</a></li>
-          <li><a href="events.php">Shooting</a></li>
+          <li><a href="shooting.php">Shooting</a></li>
           <li><a href="facilities.php">Wedding</a></li>
         </ul>
       </li>
