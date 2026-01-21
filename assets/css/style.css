@@ -1,0 +1,25 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =====================
+   GLOBAL FONTS (CA PARIVAAR MATCH)
+   ===================== */
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #222;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.2px;
+}
+
+.ca-governing-text p {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
