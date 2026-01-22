@@ -9,6 +9,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/layout.css">
 <link rel="stylesheet" href="assets/css/pages.css">
@@ -47,7 +49,7 @@
 
     <!-- LEFT MENU -->
     <ul class="ca-menu ca-menu-left">
- <li class="dropdown <?= in_array($currentPage, ['about.php','vision.php','team.php']) ? 'active' : '' ?>">
+ <li class="dropdown <?= in_array($currentPage, ['about.php','source-of-inspiration.php','message-from-chairperson.php']) ? 'active' : '' ?>">
      <a href="#">About Us</a>
      <ul class="dropdown-menu">
     <li><a href="source-of-inspiration.php">Source Of Inspiration</a></li>
@@ -60,7 +62,7 @@
     <!-- AMENITIES -->
 <li class="<?= in_array($currentPage, [
   'amenities.php',
-  'indoor.php',
+  'indoor-amenities.php',
   'outdoor.php',
   'celebrations.php',
   'accommodation.php'
@@ -69,7 +71,7 @@
   <a href="amenities.php">Amenities</a>
 
   <ul class="dropdown-menu">
-    <li><a href="indoor.php">Indoor Amenities</a></li>
+    <li><a href="indoor-amenities.php">Indoor Amenities</a></li>
     <li><a href="outdoor.php">Outdoor Amenities</a></li>
     <li><a href="celebrations.php">Celebration Time</a></li>
     <li><a href="accommodation.php">Accommodation</a></li>
