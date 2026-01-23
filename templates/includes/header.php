@@ -63,8 +63,8 @@
 <li class="<?= in_array($currentPage, [
   'amenities.php',
   'indoor-amenities.php',
-  'outdoor.php',
-  'celebrations.php',
+  'outdoor-amenities.php',
+  'conferences-trainings.php',
   'accommodation.php'
 ]) ? 'active dropdown' : 'dropdown' ?>">
 
@@ -72,8 +72,8 @@
 
   <ul class="dropdown-menu">
     <li><a href="indoor-amenities.php">Indoor Amenities</a></li>
-    <li><a href="outdoor.php">Outdoor Amenities</a></li>
-    <li><a href="celebrations.php">Celebration Time</a></li>
+    <li><a href="outdoor-amenities.php">Outdoor Amenities</a></li>
+    <li><a href="conferences-trainings.php">Conferences Trainings</a></li>
     <li><a href="accommodation.php">Accommodation</a></li>
   </ul>
 </li>
