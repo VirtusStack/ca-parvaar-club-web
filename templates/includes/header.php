@@ -89,16 +89,15 @@
      <!-- MEMBERSHIP -->
 <li class="<?= in_array($currentPage, [
   'membership.php',
-  'apply-membership.php',
-  'benefits.php'
+  'membership-benefits.php',
+ 
 ]) ? 'active dropdown' : 'dropdown' ?>">
 
   <a href="#">Membership</a>
 
   <ul class="dropdown-menu">
-    <li><a href="membership.php">Membership Overview</a></li>
-    <li><a href="apply-membership.php">Apply Membership</a></li>
-    <li><a href="benefits.php">Benefits</a></li>
+    <li><a href="membership.php">Membership Form</a></li>
+    <li><a href="membership-benefits.php"> Membership Benefits </a></li>
   </ul>
 </li>
 
