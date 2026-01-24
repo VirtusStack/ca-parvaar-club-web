@@ -65,7 +65,8 @@
   'indoor-amenities.php',
   'outdoor-amenities.php',
   'conferences-trainings.php',
-  'accommodation.php'
+  'organic-farming.php',
+   'Celebration-time.php'
 ]) ? 'active dropdown' : 'dropdown' ?>">
 
   <a href="amenities.php">Amenities</a>
@@ -74,7 +75,8 @@
     <li><a href="indoor-amenities.php">Indoor Amenities</a></li>
     <li><a href="outdoor-amenities.php">Outdoor Amenities</a></li>
     <li><a href="conferences-trainings.php">Conferences Trainings</a></li>
-    <li><a href="accommodation.php">Accommodation</a></li>
+    <li><a href="organic-farming.php">Organic Farming</a></li>
+    <li><a href="Celebration-time.php">Celebration Time</a></li>
   </ul>
 </li>
 
