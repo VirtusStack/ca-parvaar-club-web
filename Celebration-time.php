@@ -22,108 +22,108 @@ include __DIR__ . '/templates/includes/header.php';
 
     <!-- ITEM 1 -->
     <div class="amenity-item" data-gallery="1">
-      <img src="assets/images/amenities/Celebration-time/billiards.jpg">
+      <img src="assets/images/amenities/Celebration-time/banquet.jpg">
       <div class="amenity-overlay">
-        <h3>Billiards</h3>
+        <h3>Banquet</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 2 -->
     <div class="amenity-item" data-gallery="2">
-      <img src="assets/images/amenities/Celebration-time/table-tennis.jpg">
+      <img src="assets/images/amenities/Celebration-time/kites.jpg">
       <div class="amenity-overlay">
-        <h3>Table Tennis</h3>
+        <h3>Makar Sankranti</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 3 -->
     <div class="amenity-item" data-gallery="3">
-      <img src="assets/images/amenities/Celebration-time/carrom.jpg">
+      <img src="assets/images/amenities/Celebration-time/independenceday.jpg">
       <div class="amenity-overlay">
-        <h3>Carrom</h3>
+        <h3>Independence Day</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 4 -->
     <div class="amenity-item" data-gallery="4">
-      <img src="assets/images/amenities/Celebration-time/chess.jpg">
+      <img src="assets/images/amenities/Celebration-time/ganesh-chaturthi.jpg">
       <div class="amenity-overlay">
-        <h3>Chess</h3>
+        <h3>Ganesh Chaturthi</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
      <!-- ITEM 5 -->
     <div class="amenity-item" data-gallery="5">
-      <img src="assets/images/amenities/Celebration-time/dart.jpg">
+      <img src="assets/images/amenities/Celebration-time/Ganesh-Visarjan-2018.jpg">
       <div class="amenity-overlay">
-        <h3>Dart</h3>
+        <h3>Ganesh Visarjan</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 6 -->
     <div class="amenity-item" data-gallery="6">
-      <img src="assets/images/amenities/Celebration-time/library.jpg">
+      <img src="assets/images/amenities/Celebration-time/restaurant.jpg">
       <div class="amenity-overlay">
-        <h3>library</h3>
+        <h3>Restaurant</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 7 -->
     <div class="amenity-item" data-gallery="7">
-      <img src="assets/images/amenities/Celebration-time/wi-fi-campus.jpg">
+      <img src="assets/images/amenities/Celebration-time/bonfire.jpg">
       <div class="amenity-overlay">
-        <h3>Wifi </h3>
+        <h3>Bon Fire </h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 8 -->
     <div class="amenity-item" data-gallery="8">
-      <img src="assets/images/amenities/Celebration-time/general-stores.jpg">
+      <img src="assets/images/amenities/Celebration-time/disco.jpg">
       <div class="amenity-overlay">
-        <h3>General Store</h3>
+        <h3>Disco</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
      <!-- ITEM 9 -->
     <div class="amenity-item" data-gallery="9">
-      <img src="assets/images/amenities/Celebration-time/dart.jpg">
+      <img src="assets/images/amenities/Celebration-time/janmashtmi.jpg">
       <div class="amenity-overlay">
-        <h3>Dart</h3>
+        <h3>Janmashtmi</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 10 -->
     <div class="amenity-item" data-gallery="10">
-      <img src="assets/images/amenities/Celebration-time/library.jpg">
+      <img src="assets/images/amenities/Celebration-time/christmas-2017.jpg">
       <div class="amenity-overlay">
-        <h3>library</h3>
+        <h3>Christmas</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 11 -->
     <div class="amenity-item" data-gallery="11">
-      <img src="assets/images/amenities/Celebration-time/wi-fi-campus.jpg">
+      <img src="assets/images/amenities/Celebration-time/rakshabandhan-2018.jpg">
       <div class="amenity-overlay">
-        <h3>Wifi </h3>
+        <h3>Rakshabandhan </h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
 
     <!-- ITEM 12 -->
     <div class="amenity-item" data-gallery="12">
-      <img src="assets/images/amenities/Celebration-time/general-stores.jpg">
+      <img src="assets/images/amenities/Celebration-time/navratri-2017.jpg">
       <div class="amenity-overlay">
-        <h3>General Store</h3>
+        <h3>Navratri</h3>
         <button class="btn-look">Take a look</button>
       </div>
     </div>
@@ -142,18 +142,18 @@ include __DIR__ . '/templates/includes/header.php';
 
 <script>
 const images = [
-  'assets/images/amenities/indoor/billiards.jpg',
-  'assets/images/amenities/indoor/table-tennis.jpg',
-  'assets/images/amenities/indoor/carrom.jpg',
-  'assets/images/amenities/indoor/chess.jpg',
-  'assets/images/amenities/indoor/dart.jpg',
-  'assets/images/amenities/indoor/library.jpg',
-  'assets/images/amenities/indoor/wi-fi-campus.jpg',
-  'assets/images/amenities/indoor/chess.jpg',
-  'assets/images/amenities/indoor/dart.jpg',
-  'assets/images/amenities/indoor/library.jpg',
-  'assets/images/amenities/indoor/wi-fi-campus.jpg',
-  'assets/images/amenities/indoor/general-stores.jpg'
+  'assets/images/amenities/Celebration-time/banquet.jpg',
+  'assets/images/amenities/Celebration-time/kites.jpg',
+  'assets/images/amenities/Celebration-time/independenceday.jpg',
+  'assets/images/amenities/Celebration-time/ganesh-chaturthi.jpg',
+  'assets/images/amenities/Celebration-time/Ganesh-Visarjan-2018.jpg',
+  'assets/images/amenities/Celebration-time/restaurant.jpg',
+  'assets/images/amenities/Celebration-time/bonfire.jpg',
+  'assets/images/amenities/Celebration-time/disco.jpg',
+  'assets/images/amenities/Celebration-time/janmashtmi.jpg',
+  'assets/images/amenities/Celebration-time/christmas-2017.jpg',
+  'assets/images/amenities/Celebration-time/rakshabandhan-2018.jpg',
+  'assets/images/amenities/Celebration-time/navratri-2017.jpg'
 ];
 
 let currentIndex = 0;
