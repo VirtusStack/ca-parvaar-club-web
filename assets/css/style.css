@@ -23,3 +23,56 @@ h1, h2, h3, h4 {
   font-size: 15px;
   line-height: 1.7;
 }
+
+/* =====================================
+   HOME – HERO CAROUSEL (CA PARIVAAR)
+   ===================================== */
+
+.ca-hero-slider {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+}
+
+/* SLIDES */
+.ca-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.ca-slide.active {
+  opacity: 1;
+}
+
+/* DARK OVERLAY */
+.ca-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+/* TEXT */
+.ca-hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.ca-hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ca-hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
