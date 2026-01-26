@@ -1,8 +1,7 @@
 <?php
-$currentPage = 'club';
+$currentPage = basename($_SERVER['PHP_SELF']);
 include __DIR__ . '/templates/includes/header.php';
 ?>
-
 <!-- ===== BANNER ===== -->
 <section class="ca-banner" style="background-image:url('assets/images/club/conference-banner.jpg')">
   <div class="ca-banner-overlay">
