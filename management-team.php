@@ -1,5 +1,5 @@
 <?php
-$currentPage = 'about';
+$currentPage = basename($_SERVER['PHP_SELF']);
 include __DIR__ . '/templates/includes/header.php';
 ?>
 
