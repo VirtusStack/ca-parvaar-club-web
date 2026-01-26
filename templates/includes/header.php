@@ -49,27 +49,48 @@
 
     <!-- LEFT MENU -->
     <ul class="ca-menu ca-menu-left">
- <li class="dropdown <?= in_array($currentPage, ['about.php','source-of-inspiration.php','message-from-chairperson.php']) ? 'active' : '' ?>">
-     <a href="#">About Us</a>
-     <ul class="dropdown-menu">
+<li class="dropdown <?= in_array($currentPage, [
+  'source-of-inspiration.php',
+  'message-from-chairperson.php',
+  'governing-council.php',
+  'management-team.php'
+]) ? 'active' : '' ?>">
+  <a href="#">About Us</a>
+  <ul class="dropdown-menu">
     <li><a href="source-of-inspiration.php">Source Of Inspiration</a></li>
     <li><a href="message-from-chairperson.php">Message From Chairperson</a></li>
     <li><a href="governing-council.php">Governing Council</a></li>
-     <li><a href="management-team.php">Management Team</a></li>
+    <li><a href="management-team.php">Management Team</a></li>
   </ul>
 </li>
 
+
     <!-- AMENITIES -->
-<li class="<?= in_array($currentPage, [
+<?php
+$amenitiesPages = [
   'amenities.php',
   'indoor-amenities.php',
   'outdoor-amenities.php',
   'conferences-trainings.php',
   'organic-farming.php',
-   'Celebration-time.php'
-]) ? 'active dropdown' : 'dropdown' ?>">
+  'Celebration-time.php',
+  'premium-room.php',
+  'deluxe-ac-room.php',
+  'twinshare-room.php',
+  'tripleshare-room.php'
+];
 
-  <a href="amenities.php">Amenities</a>
+$accomodationPages = [
+  'premium-room.php',
+  'deluxe-ac-room.php',
+  'twinshare-room.php',
+  'tripleshare-room.php'
+];
+?>
+
+<!-- AMENITIES -->
+<li class="<?= in_array($currentPage, $amenitiesPages) ? 'active dropdown' : 'dropdown' ?>">
+  <a href="#">Amenities</a>
 
   <ul class="dropdown-menu">
     <li><a href="indoor-amenities.php">Indoor Amenities</a></li>
@@ -77,6 +98,18 @@
     <li><a href="conferences-trainings.php">Conferences Trainings</a></li>
     <li><a href="organic-farming.php">Organic Farming</a></li>
     <li><a href="Celebration-time.php">Celebration Time</a></li>
+
+    <!-- Nested dropdown -->
+    <li class="dropdown <?= in_array($currentPage, $accomodationPages) ? 'active' : '' ?>">
+      <a href="#">Accomodation</a>
+      <ul class="dropdown-menu">
+        <li><a href="premium-room.php">Premium</a></li>
+        <li><a href="deluxe-ac-room.php">Deluxe AC Roon</a></li>
+        <li><a href="twinshare-room.php">Twin Share Room</a></li>
+        <li><a href="tripleshare-room.php">Triple Share Room</a></li>
+      </ul>
+    </li>
+
   </ul>
 </li>
 
@@ -108,35 +141,40 @@
       <img src="assets/images/logo/ca-parvaar-logo.png" alt="CA Parivaar" />
     </a>
 
-    <!-- RIGHT MENU -->
-    <ul class="ca-menu ca-menu-right">
-      <li class="dropdown">
-        <a href="#">Club</a>
-        <ul class="dropdown-menu">
-          <li><a href="conference-meeting.php">Conference & Meeting</a></li>
-          <li><a href="shooting.php">Shooting</a></li>
-          <li><a href="wedding.php">Wedding</a></li>
-        </ul>
-      </li>
+  <!-- RIGHT MENU -->
+<ul class="ca-menu ca-menu-right">
+  <li class="dropdown <?= in_array($currentPage, [
+      'conference-meeting.php',
+      'shooting.php',
+      'wedding.php'
+  ]) ? 'active' : '' ?>">
+    <a href="#">Club</a>
+    <ul class="dropdown-menu">
+      <li><a href="conference-meeting.php">Conference & Meeting</a></li>
+      <li><a href="shooting.php">Shooting</a></li>
+      <li><a href="wedding.php">Wedding</a></li>
+    </ul>
+  </li>
 
-    <li>
-  <a href="gallery.php" class="<?= ($currentPage == 'gallery.php') ? 'active' : '' ?>">
-    Gallery
-     </a>
-    </li>
+  <li>
+    <a href="gallery.php" class="<?= ($currentPage == 'gallery.php') ? 'active' : '' ?>">
+      Gallery
+    </a>
+  </li>
 
   <li>
     <a href="testimonial.php" class="<?= ($currentPage == 'testimonial.php') ? 'active' : '' ?>">
-    Testimonial
-  </a>
-</li>
+      Testimonial
+    </a>
+  </li>
 
-      <li>
-      <a href="contact.php" class="<?= ($currentPage == 'contact.php') ? 'active' : '' ?>">
-       Contact Us
-     </a>
-   </li>
-    </ul>
+  <li>
+    <a href="contact.php" class="<?= ($currentPage == 'contact.php') ? 'active' : '' ?>">
+      Contact Us
+    </a>
+  </li>
+</ul>
+
 
   </div>
 </header>
