@@ -1,8 +1,7 @@
 /* ================= CONTACT PAGE ================= */
-/* ================= UNIFIED PAGE BANNER ================= */
 
 .ca-banner {
-  height: 320px;                /* SAME HEIGHT FOR ALL */
+  height: 340px;                /* SAME HEIGHT FOR ALL */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -864,3 +863,482 @@
   font-size: 16px;
 }
 
+/* =========================
+   MOBILE BANNER FIX
+========================= */
+
+@media (max-width: 992px) {
+  .ca-banner {
+    height: 240px;               /* smaller banner */
+    padding-top: 64px;           /* smaller header */
+    background-position: center top;
+  }
+
+  .ca-breadcrumb {
+    padding: 0 24px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ca-banner {
+    height: 190px;               /* perfect mobile height */
+    padding-top: 56px;
+    background-position: center top;
+  }
+
+  .ca-breadcrumb {
+    padding: 0 16px 14px;
+    font-size: 12px;
+    text-align: right;           /* keep CA Parivaar style */
+  }
+}
+
+
+/* ===== Membership SECTION ===== */
+
+.membership-benefits {
+  padding:  20px 0 60px;   /* reduced */
+  
+}
+
+.membership-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+/* TWO COLUMN ROW */
+.mb-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;               /* closer like CA Parivaar */
+  margin-bottom: 35px;    /* reduced */
+}
+
+/* HEADINGS */
+.mb-col h3,
+.mb-full h3 {
+  font-size: 19px;
+  font-weight: 600;
+  padding-left: 12px;
+  border-left: 4px solid #f6c400;
+  margin-bottom: 10px;   /* tighter */
+}
+
+/* PARAGRAPHS */
+.mb-col p,
+.mb-full p {
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin-bottom: 6px;    /* THIS is key */
+  color: #222;
+}
+
+/* FULL WIDTH BLOCK */
+.mb-full {
+  margin-bottom: 30px;   /* reduced */
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .mb-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .membership-wrap {
+    padding: 0 22px;
+  }
+}
+
+/* ===== Testimonial SECTION ===== */
+
+.ca-testimonial-wrap {
+  padding: 10px 0 20px;   /* tight like CA Parivaar */
+}
+
+.ca-testimonial-row {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  position: relative;
+}
+
+.ca-testimonial-row::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: #d6d6d6;
+  transform: translateX(-50%);
+}
+
+
+.ca-testimonial-box {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+/* LEFT PERSON INFO */
+.ca-person {
+  min-width: 200px;
+}
+
+.ca-person h4 {
+  margin: 0;
+  font-size: 19px;   /* ↓ reduced size */
+  font-weight: 600;
+  display: inline-block;
+}
+
+.ca-person p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.yellow-line {
+  display: inline-block;
+  width: 4px;
+  height: 22px;              /* matched with text */
+  background: #f5b400;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* FEEDBACK TABLE */
+.ca-feedback {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* HEADER ROW */
+.ca-feedback thead th {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* FEEDBACK WORD – shift slightly right */
+.ca-feedback .feedback-empty {
+  
+}
+
+/* EMPTY RIGHT HEADER CELL */
+.ca-feedback .feedback-title {
+  text-align: center;
+  padding-left: 20px;   /* ← THIS shifts "Feedback" right */
+}
+
+.ca-feedback td {
+  border: 1px solid #ddd;
+  padding: 6px 10px; /* SMALL PADDING = NO EXTRA SPACE */
+  text-align: center;
+
+}
+
+.ca-feedback td:last-child {
+  text-align: center;
+}
+
+
+/* IMAGE INSIDE TESTIMONIAL  */
+.ca-person img {
+  width: 200px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .ca-testimonial-row::after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+
+  .ca-testimonial-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ca-person {
+    min-width: auto;
+  }
+
+  .ca-feedback {
+    font-size: 13px;
+  }
+
+  .ca-testimonial-row {
+    padding: 15px 0;
+  }
+}
+/* ===== AFFILIATION LAYOUT ===== */
+.ca-affiliation-wrapper {
+  display: flex;
+  max-width: 1300px;
+  margin: 40px auto;
+  gap: 40px;
+  position: relative;
+padding-left: 30px;
+
+}
+
+/* LEFT FILTER */
+.ca-affiliation-filter {
+  width: 260px;
+  position: sticky;
+  top: 120px;
+}
+
+.ca-affiliation-filter h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.ca-affiliation-filter label {
+  font-style: italic;
+  margin-top: 20px;
+  display: block;
+}
+
+.ca-affiliation-filter select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+}
+
+/* RIGHT LIST */
+/* ===== AFFILIATION LIST ===== */
+.ca-affiliation-list {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+/* SINGLE ITEM CARD */
+.ca-affiliation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.ca-affiliation-item:hover {
+  background: #f9f9f9;
+}
+
+/* LEFT TEXT */
+.ca-affiliation-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.ca-affiliation-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ca-affiliation-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+.ca-affiliation-text i {
+  color: #9a9a9a;; /* CA Parivaar icon color */
+  margin-right: 6px;
+}
+
+.ca-affiliation-text a {
+  color: #000;              /* same as normal text */
+  text-decoration: none;   /* remove underline */
+  font-weight: normal;
+}
+/* ===== AFFILIATION INTRO TEXT ===== */
+.ca-affiliation-intro {
+  max-width: 1300px;
+  margin: 0 auto 30px;
+  padding-left: 30px; /* align with affiliation layout */
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.ca-affiliation-intro p {
+  margin-bottom: 12px;
+}
+
+.ca-affiliation-download {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.ca-affiliation-download a {
+  color: #f5b400; /* CA Parivaar yellow */
+  text-decoration: none;
+}
+
+.ca-affiliation-download a:hover {
+  text-decoration: underline;
+}
+
+/* LOGO ON RIGHT */
+.ca-affiliation-logo {
+  max-width: 120px;
+  text-align: right;
+}
+
+.ca-affiliation-logo img {
+  max-height: 60px;
+  object-fit: contain;
+  vertical-align: middle;
+
+}
+/* Club title with yellow left line */
+.ca-club-title {
+  position: relative;
+  padding-left: 15px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ca-club-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 25px;
+  background-color: #f5b400; /* CA Parivaar yellow */
+}
+/* ===== CA PARIVAAR YELLOW SCROLLBAR ===== */
+
+/* Chrome, Edge, Safari */
+.ca-affiliation-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ca-affiliation-list::-webkit-scrollbar-track {
+  background: #f2f2f2; /* light grey track */
+  border-radius: 10px;
+}
+
+.ca-affiliation-list::-webkit-scrollbar-thumb {
+  background-color: #f5b400; /* CA Parivaar yellow */
+  border-radius: 10px;
+}
+
+.ca-affiliation-list::-webkit-scrollbar-thumb:hover {
+  background-color: #e0a800; /* slightly darker on hover */
+}
+
+/* Firefox */
+.ca-affiliation-list {
+  scrollbar-width: thin;
+  scrollbar-color: #f5b400 #f2f2f2;
+}
+
+
+/* ===== CA PARIVAAR NOTE BAR (EXACT HEIGHT) ===== */
+.ca-affiliation-note-wrap {
+  width: 100%;
+  background-color: #f5b400;
+}
+
+.ca-affiliation-note {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 6px 30px;              /*  small height */
+  font-size: 13px;
+  line-height: 1.4;               /*  tight line height */
+  color: #000;
+  display: flex;
+  align-items: center;            /*  vertical centering */
+  gap: 6px;
+}
+
+.ca-note-label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ca-note-text em {
+  font-style: normal;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Affiliation wrapper: stack filter and list vertically */
+  .ca-affiliation-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;  /* <-- add this for left/right spacing */
+  }
+
+  /* Filter moves above list, full width */
+  .ca-affiliation-filter {
+    width: 100%;
+    position: relative; /* remove sticky */
+    top: auto;
+    padding: 0 10px; /* optional extra spacing */
+  }
+
+  /* Dropdown full width */
+  .ca-affiliation-filter select {
+    width: 100%;
+  }
+
+  /* Affiliation list padding smaller */
+  .ca-affiliation-list {
+    padding: 20px;
+    max-height: none;
+    box-sizing: border-box;
+  }
+
+  /* Each item stacked vertically */
+  .ca-affiliation-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+
+  /* Divider hidden on mobile */
+  .ca-affiliation-divider {
+    display: none;
+  }
+
+  /* Logo below text, smaller */
+  .ca-affiliation-logo {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .ca-affiliation-logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+
+
+  /* ---- ADD EXTRA LEFT PADDING FOR TEXT ---- */
+  .ca-affiliation-text {
+    padding-left: 10px;  /* adjust this value as needed */
+  }
+
+}

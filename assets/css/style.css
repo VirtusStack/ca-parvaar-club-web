@@ -4,10 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* =====================
-   GLOBAL FONTS (CA PARIVAAR MATCH)
-   ===================== */
 
+/* ================= GLOBAL ================= */
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   color: #222;
@@ -15,64 +13,381 @@ body {
 
 h1, h2, h3, h4 {
   font-family: "Playfair Display", serif;
-  letter-spacing: 0.2px;
 }
 
-.ca-governing-text p {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-}
+/* ================= HERO SLIDER ================= */
 
-/* =====================================
-   HOME – HERO CAROUSEL (CA PARIVAAR)
-   ===================================== */
-
-.ca-hero-slider {
+.ca-hero {
+  width: 100%;
   position: relative;
-  height: 520px;
   overflow: hidden;
 }
 
-/* SLIDES */
+.ca-slider {
+  position: relative;
+}
+
 .ca-slide {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1.2s ease;
 }
 
 .ca-slide.active {
+  position: relative;
   opacity: 1;
 }
 
-/* DARK OVERLAY */
-.ca-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
+.ca-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* TEXT */
-.ca-hero-content {
-  text-align: center;
+/* ================= OVERLAY ================= */
+
+.ca-overlay-box {
+  position: absolute;
+  left: 80px;
+  bottom: 70px;
+  max-width: 520px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 22px 26px;
   color: #fff;
 }
 
-.ca-hero-content h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 46px;
-  font-weight: 600;
+.ca-overlay-box p {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
-.ca-hero-content p {
-  font-size: 18px;
-  letter-spacing: 1px;
+.ca-overlay-box h3 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 34px;
+  color: #ffd200;
+}
+
+/* ================= HERO CARDS ================= */
+
+.ca-hero-cards {
+  margin-top: -65px;              /* desktop overlap */
+  padding: 0 60px 15px;
+  position: relative;
+  z-index: 5;
+}
+
+.ca-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ca-card {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.ca-card img {
+  width: 86%;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ca-card:hover img {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.22);
+}
+
+.ca-card .arrow {
+  display: block;
+  margin: 12px 0 6px;
+  font-size: 12px;
+  color: #f5c400;
+}
+
+.ca-card p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ================= ABOUT ================= */
+
+.ca-about {
+  background: #fff;
+  padding: 45px 0 30px;
+}
+
+.ca-about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.ca-about h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+.ca-about p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* ===== CLUB AMENITIES EXACT STYLE ===== */
+
+.ca-amenities {
+  padding: 90px 0;
+  background: #f5f5f5;
+}
+
+.ca-amenities-container {
+  width: 85%;
+  margin: auto;
+}
+
+.ca-amenities-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 60px;
+  font-family: serif;
+  color: #2b2b2b;
+}
+
+/* 3 column layout */
+.ca-amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+
+.ca-amenity-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 19 / 9;   /*  cinematic wide ratio */
+}
+
+/* Image */
+.ca-amenity-item img {
+  width: 120%;   /* little extra for left movement */
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+
+/* Dark overlay */
+.ca-amenity-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+/* Text inside image */
+.ca-amenity-text {
+  position: absolute;
+  bottom: 22px;
+  right: 25px;         /*  text right side like screenshot */
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+/* HOVER EFFECT (exact behaviour) */
+.ca-amenity-item:hover img {
+  transform: translateX(-40px);
+}
+
+.ca-amenity-item:hover::before {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.ca-amenity-item:hover .ca-amenity-text {
+  color: #ffc107;      /*  yellow like Gymnasium */
+}
+
+/* ================= LINKS ================= */
+
+.ca-links {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin: 35px 0 20px;
+}
+
+.ca-link-item {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f1f1f;
+  text-decoration: none;
+  padding-bottom: 6px;
+}
+
+.ca-link-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 18px;
+  height: 2px;
+  background: #f5c400;
+  transition: width 0.3s ease;
+}
+
+.ca-link-item:hover::after {
+  width: 100%;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+  .ca-hero-cards {
+    padding: 0 25px 20px;
+  }
+
+  .ca-overlay-box {
+    left: 30px;
+    bottom: 40px;
+  }
+}
+
+/* ================= MOBILE (MERGED & CLEAN) ================= */
+
+@media (max-width: 576px) {
+
+  /* SLIDER */
+  .ca-slider {
+    height: auto;
+  }
+
+  .ca-slide {
+    position: relative;
+    display: none;
+    opacity: 1;
+  }
+
+  .ca-slide.active {
+    display: block;
+  }
+
+  /* OVERLAY */
+  .ca-overlay-box {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: 100%;
+    padding: 14px 16px;
+  }
+
+  .ca-overlay-box p {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .ca-overlay-box h3 {
+    font-size: 22px;
+  }
+
+  /* CARDS (NO OVERLAP ON MOBILE) */
+  .ca-hero-cards {
+    margin-top: 20px;
+    padding: 0 12px 20px;
+  }
+
+  .ca-cards-container {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .ca-card img {
+    width: 80%;
+    height: 155px;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+  }
+
+  .ca-card:hover img {
+    transform: none;
+  }
+
+/* text row below image */
+.ca-card-text {
+  display: flex;
+  flex-direction: column;   /*  arrow above text */
+  align-items: center;      /* center horizontally */
+  justify-content: center;
+  gap: 4px;
+  padding: 0;
+}
+
+.ca-card .arrow {
+  font-size: 14px;
+}
+
+.ca-card p {
+  margin: 0;
+  font-size: 15px;
+}
+
+  /* add clean gap BELOW image */
+  .ca-card img {
+    margin-bottom: 10px;
+  }
+
+  /* ABOUT */
+  .ca-about-container {
+    padding: 0 18px;
+  }
+
+  /* LINKS (LEFT, SHORT UNDERLINE) */
+  .ca-links {
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+    padding-left: 18px;
+  }
+
+  .ca-link-item::after {
+    width: 16px;
+  }
+
+  .ca-link-item:hover::after,
+  .ca-link-item:active::after {
+    width: 16px;
+  }
+
+}
+@media (max-width: 992px) {
+  .ca-amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .ca-amenities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ca-amenity-item {
+    height: 200px;
+  }
 }

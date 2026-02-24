@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/layout.css">
@@ -38,14 +39,18 @@
   <div class="ca-header-inner">
 
       <!-- ===== MOBILE HEADER ===== -->
-      <div class="ca-mobile-header">
-        <div class="ca-mobile-toggle">
-          <i class="bi bi-list"></i>
-        </div>
-        <div class="ca-mobile-logo">
-          <img src="assets/images/logo/logo-mobile.png" alt="CA Parivaar">
-        </div>
-      </div>
+     <!-- MOBILE HEADER -->
+<div class="ca-mobile-header">
+  <div class="ca-mobile-toggle">
+    <i class="bi bi-list"></i>
+  </div>
+  <div class="ca-mobile-logo">
+    <a href="index.php">
+      <img src="assets/images/logo/logo-mobile.png" alt="CA Parivaar">
+    </a>
+  </div>
+</div>
+
 
     <!-- LEFT MENU -->
     <ul class="ca-menu ca-menu-left">
@@ -185,46 +190,140 @@ $accomodationPages = [
 <!-- MOBILE NAV -->
 <div class="ca-nav-wrapper">
 
-  <!-- YELLOW TOP BAR -->
-  <div class="ca-mobile-menu-header">
-    <span>All Categories</span>
-    <button class="ca-menu-close">
-      <i class="bi bi-x-lg"></i>
-    </button>
-  </div>
+<div class="ca-mobile-menu-header">
+  <span class="menu-title">All Categories</span>
+  <button class="ca-menu-close">
+    <i class="bi bi-x-lg"></i>
+  </button>
+</div>
 
+ 
   <!-- MENU LIST -->
-  <ul class="ca-mobile-menu">
-    <li><a href="about.php">About</a></li>
-    <li><a href="amenities.php">Amenities</a></li>
-    <li><a href="affiliation.php">Affiliation</a></li>
-    <li><a href="membership.php">Membership</a></li>
-    <li><a href="club.php">Club</a></li>
-    <li><a href="gallery.php">Gallery</a></li>
-    <li><a href="testimonial.php">Testimonial</a></li>
-    <li><a href="contact.php">Contact Us</a></li>
-  </ul>
+  <ul class="ca-mobile-menu main-menu">
+  <li class="has-sub">
+    <a href="#" data-target="aboutMenu">
+      About Us <span class="arrow">›</span>
+    </a>
+  </li>
+
+  <li class="has-sub">
+    <a href="#" data-target="amenitiesMenu">
+      Amenities <span class="arrow">›</span>
+    </a>
+  </li>
+
+  <li><a href="affiliation.php">Affiliation</a></li>
+
+   <li class="has-sub">
+    <a href="#" data-target="membershipMenu">
+      Membership <span class="arrow">›</span>
+    </a>
+  </li>
+
+  <li class="has-sub">
+    <a href="#" data-target="clubMenu">
+      Club <span class="arrow">›</span>
+    </a>
+  </li>
+
+
+  <li><a href="gallery.php">Gallery</a></li>
+  <li><a href="testimonial.php">Testimonial</a></li>
+  <li><a href="contact.php">Contact Us</a></li>
+</ul>
+
+<ul class="ca-mobile-menu submenu" id="aboutMenu">
+   <li class="menu-back"><a href="#">Back</a></li> 
+  <li><a href="source-of-inspiration.php">Source Of Inspiration</a></li>
+  <li><a href="message-from-chairperson.php">Message From Chairperson</a></li>
+  <li><a href="governing-council.php">Governing Council</a></li>
+  <li><a href="management-team.php">Management Team</a></li>
+</ul>
+
+<ul class="ca-mobile-menu submenu" id="amenitiesMenu">
+   <li class="menu-back"><a href="#">Back</a></li> 
+  <li><a href="indoor-amenities.php">Indoor Amenities</a></li>
+  <li><a href="outdoor-amenities.php">Outdoor Amenities</a></li>
+  <li><a href="conferences-trainings.php">Conferences & Trainings</a></li>
+  <li><a href="organic-farming.php">Organic Farming</a></li>
+   <li><a href="Celebration-time.php">Celebration Time</a></li> 
+</ul>
+
+<ul class="ca-mobile-menu submenu" id="membershipMenu">
+    <li class="menu-back"><a href="#">Back</a></li> 
+   <li><a href="#">Membership Form</a></li>
+  <li><a href="memebership_benifit.php">Membership Benefit</a></li>
+</ul>
+
+<ul class="ca-mobile-menu submenu" id="clubMenu">
+    <li class="menu-back"><a href="#">Back</a></li> 
+   <li><a href="conference-meeting.php">Conference & Meeting</a></li>
+  <li><a href="shooting.php">Shooting</a></li>
+  <li><a href="wedding.php">Wedding</a></li>
+</ul>
+  
 
 </div>
 <!-- MOBILE OVERLAY  -->
 <div class="ca-overlay"></div>
-
 <script>
-const toggle = document.querySelector('.ca-mobile-toggle');
-const nav = document.querySelector('.ca-nav-wrapper');
-const closeBtn = document.querySelector('.ca-menu-close');
-const overlay = document.querySelector('.ca-overlay');
+document.addEventListener('DOMContentLoaded', function () {
 
-toggle.addEventListener('click', () => {
-  nav.classList.add('active');
-  overlay.classList.add('active');
+  const toggle = document.querySelector('.ca-mobile-toggle');
+  const nav = document.querySelector('.ca-nav-wrapper');
+  const overlay = document.querySelector('.ca-overlay');
+  const closeBtn = document.querySelector('.ca-menu-close');
+  const backBtn = document.querySelector('.ca-menu-back');
+  const title = document.querySelector('.menu-title');
+
+  const menuLinks = document.querySelectorAll('.has-sub a[data-target]');
+  const submenus = document.querySelectorAll('.submenu');
+
+  // OPEN MENU
+  toggle.addEventListener('click', () => {
+    nav.classList.add('active');
+    overlay.classList.add('active');
+    title.textContent = 'All Categories';
+    nav.classList.remove('show-submenu');
+  });
+
+  // CLOSE MENU
+  closeBtn.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+
+  function closeMenu() {
+    nav.classList.remove('active');
+    overlay.classList.remove('active');
+    nav.classList.remove('show-submenu');
+    submenus.forEach(s => s.classList.remove('active'));
+    title.textContent = 'All Categories';
+  }
+
+  // OPEN SUBMENU (CA PARIVAAR STYLE)
+  menuLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const id = link.dataset.target;
+
+      submenus.forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+
+      nav.classList.add('show-submenu');
+      title.textContent = link.childNodes[0].textContent.trim();
+
+    });
+  });
+
+ // NEW
+document.querySelectorAll('.menu-back a').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    nav.classList.remove('show-submenu');
+    submenus.forEach(s => s.classList.remove('active'));
+    title.textContent = 'All Categories';
+  });
 });
 
-closeBtn.addEventListener('click', closeMenu);
-overlay.addEventListener('click', closeMenu);
 
-function closeMenu() {
-  nav.classList.remove('active');
-  overlay.classList.remove('active');
-}
+});
 </script>
